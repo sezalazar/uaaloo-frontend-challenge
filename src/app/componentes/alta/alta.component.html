@@ -1,0 +1,41 @@
+
+<div class="container">
+  <h1>Alta de cliente</h1>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">DNI</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" [(ngModel)]="ClienteId" placeholder="Tu DNI..">
+      </div>
+      <div class="col-25">
+        <label for="fname">Nombre</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" [(ngModel)]="ClienteNombre" placeholder="Tu nombre..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Apellido</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" [(ngModel)]="ClienteApellido" placeholder="Tu apellido..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Dirección</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="form-control" [(ngModel)]="ClienteDireccion" placeholder="Tu direccion..">
+      </div>
+    </div>
+
+    <div class="row">
+      <button click="agregarCliente()" routerLink="listado" class="m-1 btn btn-light btn-outline-primary">Enviar</button>
+    </div>
+</div>
+
+
+

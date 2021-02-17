@@ -1,0 +1,27 @@
+
+
+<div class="container">
+  <div class="table-responsive" >
+    <h1>Listado de clientes</h1>
+    <table style="width:100%" class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">DNI</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Dirección</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let dataItem of ListaClientes">
+        <th>{{dataItem.id}}</th>
+        <th>{{dataItem.nombre}}</th>
+        <th>{{dataItem.apellido}}</th>
+        <th>{{dataItem.direccion}}</th>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+</div>
+
+
